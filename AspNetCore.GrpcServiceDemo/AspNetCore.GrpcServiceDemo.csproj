@@ -7,13 +7,9 @@
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Protos\test.proto" />
-  </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="Protos\test.proto" GrpcServices="Server" />
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\order.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>

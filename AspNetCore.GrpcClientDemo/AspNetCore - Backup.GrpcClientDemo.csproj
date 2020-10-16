@@ -8,20 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.12.4" />
-    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.30.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Protos\" />
-  </ItemGroup>
-  
-  <ItemGroup>
 	<Protobuf Include="Protos/order.proto" GrpcServices="Client" />
   </ItemGroup>
 

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "AspNetCore.GrpcServiceDemo.Protos";
+
+service Order {
+  rpc CreateOrder (CreateOrderRequest) returns (CreateOrderReply);
+}
+
+  message CreateOrderRequest {
+    string ItemCode  = 1;
+    string ItemName = 2;
+    string Spec = 3;
+    double Price = 4;
+    double Quantity = 5;
+    string Unit = 6;
+    double Cost = 7;
+}
+
+message CreateOrderReply {
+  bool success = 1;
+}
